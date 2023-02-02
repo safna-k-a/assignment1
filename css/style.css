@@ -214,6 +214,8 @@
     }
     .course {
         justify-content: flex-start;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     .course-detail {
         margin-left: 10%;
@@ -222,19 +224,17 @@
         height: 100%;
         flex-direction: column;
     }
-    .img-male {
-        padding: 0;
-        width: 100%;
-    }
+    .img-male,
     .img-female {
         padding: 0;
-        width: 100%;
+        width: 90%;
+        height: 370px;
     }
     .join {
         margin-left: 3%;
     }
     .address {
-        width: 90%;
+        width: 100%;
 
         font-size: 15px;
     }
