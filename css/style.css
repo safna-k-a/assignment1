@@ -210,13 +210,13 @@
         font-size: 15px;
     }
     .training-content {
-        margin-left: 0;
+        text-align: center;
     }
     .course {
         justify-content: flex-start;
     }
     .course-detail {
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .interview-img {
         height: 100%;
