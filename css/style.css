@@ -3,12 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 .container {
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 .banner {
     width: 100%;
@@ -16,18 +14,12 @@
     min-height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: end;
-    align-items: center;
 }
 .heading {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     margin-right: 10%;
 }
-.quotes {
-    font-size: 30px;
+.quotes h1 {
+    font-size: 60px;
     text-align: right;
     font-weight: 900;
 }
@@ -52,15 +44,10 @@
     line-height: 2;
     font-size: 30px;
     padding-left: 50px;
-    position: absolute;
-    top: 200px;
-    left: 600px;
+    margin-left: -100px;
+    margin-top: 200px;
 }
-.training-main-part {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-}
+
 .training-detail p::before {
     content: "{";
     color: rgb(217, 17, 67);
@@ -83,45 +70,38 @@
 .course {
     background-image: url("../images/modulebg.jpg");
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: flex;
-    gap: 50px;
+    /* gap: 50px; */
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .course-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    height: fit-content;
+    padding: 170px 135px;
 }
 .php {
     background-color: rgba(0, 0, 0, 0.7);
     width: fit-content;
-    padding: 20px;
+    padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
     color: #fff;
     border-radius: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
+    /* margin-top: 30px; */
 }
 .interview {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 .interview-img {
     width: 100%;
-    display: flex;
+
     margin-top: 3%;
 }
 .img-male {
-    width: 50%;
     height: 500px;
     background-image: url("../images/testsbg.jpg");
     background-repeat: no-repeat;
@@ -129,7 +109,6 @@
     padding: 50px;
 }
 .img-female {
-    width: 50%;
     height: 500px;
     background-image: url("../images/intrvwbg.jpg");
     background-repeat: no-repeat;
@@ -141,9 +120,9 @@
     color: #fff;
     height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     line-height: 2;
     text-align: center;
 }
@@ -153,10 +132,10 @@
 .contact {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: space-evenly; */
 }
 .join {
     display: flex;
@@ -178,12 +157,11 @@
     color: #f26422;
 }
 .join h1 {
+    margin-top: 20px;
     font-size: 50px;
+    text-align: center;
 }
 .address {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
     text-align: center;
     font-size: 20px;
 }
@@ -197,33 +175,46 @@
         background-image: none;
         background-color: #ecf9ff;
         width: 100%;
+        padding: 0;
     }
-    .training-img img {
+    .quotes h1 {
+        font-size: 50px;
+        text-align: right;
+        font-weight: 900;
+    }
+    .training-img {
         margin-left: 0;
         width: 100%;
         margin-top: 0;
+        padding: 0;
+    }
+    .training-img img {
+        margin-left: 0;
+        margin-top: 0;
     }
     .training-detail {
-        position: static;
         left: 0;
         width: 100%;
         font-size: 15px;
+        margin-top: 0;
+        margin-left: 0;
     }
     .training-content {
         text-align: center;
     }
     .course {
-        justify-content: flex-start;
+        height: 1200px;
+
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    .course-detail {
+    /* .course-detail {
         margin-left: 10%;
-    }
-    .interview-img {
+    } */
+    /* .interview-img {
         height: 100%;
         flex-direction: column;
-    }
+    } */
     .img-male,
     .img-female {
         padding: 0;
@@ -234,6 +225,7 @@
         margin-left: 3%;
     }
     .address {
+        margin-top: 3%;
         width: 100%;
 
         font-size: 15px;
