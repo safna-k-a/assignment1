@@ -9,14 +9,16 @@
     font-family: "Roboto", sans-serif;
 }
 .banner {
-    width: 100%;
     background-image: url("../images/academy-banner.jpg");
     min-height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 .heading {
-    margin-right: 10%;
+    margin-right: 8%;
+    width: 100%;
 }
 .quotes h1 {
     font-size: 60px;
@@ -25,27 +27,21 @@
 }
 .logo {
     text-align: right;
-}
-.training {
-    width: 100%;
+    padding: 20px;
 }
 .training img {
     height: 100%;
-    width: 100%;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin: 10% 0 0 10%;
 }
 .training-detail {
     background-color: #000;
     color: #0af0d9;
     height: fit-content;
-    width: 49%;
-    padding: 33px;
+    width: 50%;
+    padding: 25px 25px 25px 50px;
     line-height: 2;
     font-size: 30px;
-    padding-left: 50px;
-    margin-left: -100px;
-    margin-top: 200px;
+    margin: 200px 0 0 -100px;
 }
 
 .training-detail p::before {
@@ -59,9 +55,6 @@
 .training-content {
     color: #252525;
     padding: 10px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     line-height: 1.7;
     font-size: 20px;
@@ -69,14 +62,9 @@
 }
 .course {
     background-image: url("../images/modulebg.jpg");
-    width: 100%;
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* gap: 50px; */
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
 }
 .course-detail {
     height: fit-content;
@@ -85,21 +73,16 @@
 .php {
     background-color: rgba(0, 0, 0, 0.7);
     width: fit-content;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 10px 100px 10px 100px;
     color: #fff;
     border-radius: 10px;
-    /* margin-top: 30px; */
 }
 .interview {
-    width: 100%;
     min-height: 100vh;
 }
 .interview-img {
-    width: 100%;
-
-    margin-top: 3%;
+    padding: 0;
+    margin: 0;
 }
 .img-male {
     height: 500px;
@@ -120,9 +103,7 @@
     color: #fff;
     height: 100%;
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    margin-left: 0;
     line-height: 2;
     text-align: center;
 }
@@ -130,30 +111,11 @@
     width: 50%;
 }
 .contact {
-    width: 100%;
     min-height: 100vh;
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center;
-    justify-content: space-evenly; */
-}
-.join {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 .button {
     width: fit-content;
-    /* padding: 19px;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;*/
-    align-self: center;
     font-weight: bold;
-}
-.button a {
-    text-decoration: none;
-    color: #f26422;
 }
 .join h1 {
     margin-top: 20px;
@@ -163,73 +125,52 @@
 .address {
     text-align: center;
     font-size: 20px;
+    margin-top: 70px;
 }
-.address-details {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 972px) and (min-width: 234px) {
     .banner {
         background-image: none;
         background-color: #ecf9ff;
-        width: 100%;
         padding: 0;
+        margin: 0;
     }
     .quotes h1 {
         font-size: 50px;
-        text-align: right;
-        font-weight: 900;
     }
     .training-img {
         margin-left: 0;
         width: 100%;
-        margin-top: 0;
+        min-width: 0;
         padding: 0;
     }
     .training-img img {
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0;
+        width: 100%;
     }
     .training-detail {
         left: 0;
         width: 100%;
         font-size: 15px;
-        margin-top: 0;
-        margin-left: 0;
+        margin: 0;
+    }
+    .training {
+        margin: 0;
     }
     .training-content {
         text-align: center;
     }
     .course {
-        height: 1200px;
-
-        padding-bottom: 10px;
-        padding-top: 10px;
+        height: 1050px;
     }
-    /* .course-detail {
-        margin-left: 10%;
-    } */
-    /* .interview-img {
-        height: 100%;
-        flex-direction: column;
-    } */
+    .course-detail {
+        padding: 50px 135px;
+        width: 100%;
+    }
     .img-male,
     .img-female {
         padding: 0;
         width: 100%;
         height: 370px;
-    }
-    .join {
-        margin-left: 3%;
-    }
-    .address {
-        margin-top: 3%;
-        width: 100%;
-
-        font-size: 15px;
-    }
-    .join h1 {
-        font-size: 30px;
     }
 }
